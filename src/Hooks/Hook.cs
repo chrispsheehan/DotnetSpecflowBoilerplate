@@ -1,5 +1,7 @@
 using System;
 using BoDi;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
 using TechTalk.SpecFlow;
 
 namespace boilerplate.Hooks
@@ -7,6 +9,8 @@ namespace boilerplate.Hooks
     [Binding]
     public class Hooks
     {
+        private static RemoteWebDriver _driver;
+
         [BeforeTestRun]
         public static void BeforeTestRun()
         {
@@ -22,7 +26,9 @@ namespace boilerplate.Hooks
         [BeforeScenario]
         public void BeforeScenario(IObjectContainer objectContainer, ScenarioContext scenarioContext)
         {
-            //objectContainer.RegisterInstanceAs(objectToRegister);
+            _driver = new RemoteWebDriver(new Uri("[DesiredUrl]"), new ChromeOptions());
+
+            objectContainer.RegisterInstanceAs(_driver);
 
             Console.WriteLine($"Starting Scenario: {scenarioContext.ScenarioInfo.Title}");            
         }
@@ -30,7 +36,9 @@ namespace boilerplate.Hooks
         [AfterScenario]
         public void AfterScenario(ScenarioContext scenarioContext)
         {
-            Console.WriteLine($"Finishing Scenario: {scenarioContext.ScenarioInfo.Title}");            
+            Console.WriteLine($"Finishing Scenario: {scenarioContext.ScenarioInfo.Title}");
+
+            _driver.Quit();         
         }
 
         [AfterFeature]

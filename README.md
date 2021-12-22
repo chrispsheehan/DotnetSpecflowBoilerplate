@@ -22,3 +22,9 @@ Create ```.gitignore``` file with the below content at root.
 obj/
 bin/
 ```
+
+## Install packages
+
+Package names as they appear on [nuget.org]("https://www.nuget.org")
+
+```dotnet add package Selenium.WebDriver```

@@ -10,4 +10,7 @@ dotnet new specflowproject --unittestprovider xunit --framework netcoreapp3.1
 
 output - The template "SpecFlow Project Template" was created successfully.
 
-
+Exclude chaff
+*.feature.cs
+obj/
+bin/

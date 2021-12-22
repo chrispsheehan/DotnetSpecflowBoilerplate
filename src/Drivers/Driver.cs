@@ -1,6 +1,6 @@
 using System;
 
-namespace src.Drivers
+namespace boilerplate.Drivers
 {
     public class Driver
     {

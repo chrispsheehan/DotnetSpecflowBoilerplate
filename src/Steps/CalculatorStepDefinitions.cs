@@ -1,6 +1,6 @@
 using TechTalk.SpecFlow;
 
-namespace src.Steps
+namespace boilerplate.Steps
 {
     [Binding]
     public sealed class CalculatorStepDefinitions

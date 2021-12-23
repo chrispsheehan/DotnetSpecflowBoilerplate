@@ -16,7 +16,7 @@ namespace boilerplate.Steps
         }
 
          [Given(@"I go to ""(.*)""")]
-         public void GivenIGotToGithub(string url)
+         public void GivenIGoToGithub(string url)
          {
             _driver.Url = url;
          }

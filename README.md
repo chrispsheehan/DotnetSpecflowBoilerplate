@@ -25,7 +25,7 @@ dotnet new -i SpecFlow.Templates.DotNet
 Create project shell:
 
 ```bash
-dotnet new specflowproject --unittestprovider nunit --framework netcoreapp3.1 --name boilerplate --output src 
+dotnet new specflowproject --unittestprovider xunit --framework netcoreapp3.1 --name boilerplate --output src 
 ```
 
 Create ```.gitignore``` file with the below content at root.

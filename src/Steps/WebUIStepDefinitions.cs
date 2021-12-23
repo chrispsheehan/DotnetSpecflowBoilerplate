@@ -1,5 +1,5 @@
 using System;
-using Xunit;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 
@@ -18,15 +18,15 @@ namespace boilerplate.Steps
          [Given(@"I go to ""(.*)""")]
          public void GivenIGotToGithub(string url)
          {
-             _driver.Url = url;
+            _driver.Url = url;
          }
 
          [Then(@"the page title is ""(.*)""")]
          public void ThenTheTitleIs(string expectedTitle)
          {
-             var actualTitle = _driver.Title;
+            var actualTitle = _driver.Title;
 
-             Assert.Contains(expectedTitle, actualTitle);
+            Assert.AreEqual(expectedTitle, actualTitle);
          }                 
     }
 }

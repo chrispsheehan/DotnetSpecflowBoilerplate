@@ -4,15 +4,18 @@
 
 - [Initiallise a project]("https://docs.specflow.org/projects/specflow/en/latest/Installation/Project-and-Item-Templates.html")
 
-## Build Framework
+## Build Framework Shell
 
-List templates: ```dotnet new -i SpecFlow.Templates.DotNet```
+List templates:
+
+```bash
+dotnet new -i SpecFlow.Templates.DotNet
+```
 
 Create project shell:
 
 ```bash
-cd src
-dotnet new specflowproject --unittestprovider xunit --framework netcoreapp3.1 --name boilerplate
+dotnet new specflowproject --unittestprovider nunit --framework netcoreapp3.1 --name boilerplate --output src 
 ```
 
 Create ```.gitignore``` file with the below content at root.
@@ -27,5 +30,7 @@ bin/
 
 Package names as they appear on [nuget.org]("https://www.nuget.org")
 
-```dotnet add package Selenium.WebDriver```
-```dotnet add package Selenium.WebDriver.ChromeDriver```
+```bash
+dotnet add package Selenium.WebDriver
+dotnet add package Selenium.WebDriver.ChromeDriver
+```

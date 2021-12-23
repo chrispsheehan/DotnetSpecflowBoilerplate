@@ -1,3 +1,4 @@
 *.feature.cs
 obj/
 bin/
+*.json

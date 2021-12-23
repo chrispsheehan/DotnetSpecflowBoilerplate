@@ -1,5 +1,5 @@
 using System;
-using NUnit.Framework;
+using Xunit;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 
@@ -26,7 +26,7 @@ namespace boilerplate.Steps
          {
             var actualTitle = _driver.Title;
 
-            Assert.AreEqual(expectedTitle, actualTitle);
+            Assert.Contains(expectedTitle, actualTitle);
          }                 
     }
 }

@@ -1,5 +1,7 @@
 # DotnetSpecflowBoilerplate
 
+A boiled down framework for running tests quickly.
+
 - [Example Specflow code]("https://github.com/SpecFlowOSS/SpecFlow-Examples")
 
 - [Initiallise a project]("https://docs.specflow.org/projects/specflow/en/latest/Installation/Project-and-Item-Templates.html")

@@ -28,3 +28,4 @@ bin/
 Package names as they appear on [nuget.org]("https://www.nuget.org")
 
 ```dotnet add package Selenium.WebDriver```
+```dotnet add package Selenium.WebDriver.ChromeDriver```

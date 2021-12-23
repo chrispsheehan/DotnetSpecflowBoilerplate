@@ -6,6 +6,14 @@ A boiled down framework for running tests quickly.
 
 - [Initiallise a project]("https://docs.specflow.org/projects/specflow/en/latest/Installation/Project-and-Item-Templates.html")
 
+## Run it (Examples)
+
+```bash
+dotnet test src
+dotnet test src --filter FeatureTitle=[FeatureName]
+dotnet test src --filter Description=[ScenarioName]
+```
+
 ## Build Framework Shell
 
 List templates:

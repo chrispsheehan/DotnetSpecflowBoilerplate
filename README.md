@@ -45,7 +45,7 @@ dotnet add package Selenium.WebDriver
 dotnet add package Selenium.WebDriver.ChromeDriver
 ```
 
-## Debugging in [VS Code]("https://code.visualstudio.com/")
+## Debugging in [VS Code]("https://code.visualstudio.com/docs/editor/debugging")
 
 Save the below files in the project folder. Note the ```dotnet``` binary path will need to be located.
 

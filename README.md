@@ -44,3 +44,59 @@ Package names as they appear on [nuget.org]("https://www.nuget.org")
 dotnet add package Selenium.WebDriver
 dotnet add package Selenium.WebDriver.ChromeDriver
 ```
+
+## Debugging in [VS Code]("https://code.visualstudio.com/")
+
+Save the below files in the project folder. Note the ```dotnet``` binary path will need to be located.
+
+```.vscode/launch.json```
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Test",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "[insertBinaryPath]/dotnet",
+            "args": ["test", "src"],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
+```
+
+```.vscode/tasks.json```
+
+```json
+{
+    "version": "2.0.0",
+    "command": "dotnet",
+    "args": [],
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "[insertBinaryPath]/dotnet",
+            "args": [
+                "build",
+                "src"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "_id": "build",
+                "isDefault": false
+            }
+        }
+    ]
+}
+```

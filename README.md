@@ -51,12 +51,13 @@ Save the below file to point the explorer at the tests.
 
 GOTCHA - ensure read/write permissions are granted to the folder. Otherwise no test will appear.
 
+[Known issue of tests appearing twice in UI]("https://github.com/formulahendry/vscode-dotnet-test-explorer/issues/159")
+
 ```.vscode/settings.json```
 
 ```json
 {
-    "dotnet-test-explorer.testProjectPath" : "src/*.csproj",
-    "dotnet-test-explorer.autoWatch" : true
+    "dotnet-test-explorer.testProjectPath" : "**/*.test.csproj"
 }
 ```
 

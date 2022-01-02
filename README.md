@@ -45,7 +45,22 @@ dotnet add package Selenium.WebDriver
 dotnet add package Selenium.WebDriver.ChromeDriver
 ```
 
-## Debugging in [VS Code]("https://code.visualstudio.com/docs/editor/debugging")
+## [Dotnet Test Explorer]("https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer")
+
+Save the below file to point the explorer at the tests.
+
+GOTCHA - ensure read/write permissions are granted to the folder. Otherwise no test will appear.
+
+```.vscode/settings.json```
+
+```json
+{
+    "dotnet-test-explorer.testProjectPath" : "src/*.csproj",
+    "dotnet-test-explorer.autoWatch" : true
+}
+```
+
+## [Debugging in VS Code]("https://code.visualstudio.com/docs/editor/debugging")
 
 Save the below files in the project folder. Note the ```dotnet``` binary path will need to be located.
 

@@ -107,11 +107,7 @@ Save the below files in the project folder. Note the ```dotnet``` binary path wi
                 "build",
                 "src"
             ],
-            "problemMatcher": "$msCompile",
-            "group": {
-                "_id": "build",
-                "isDefault": false
-            }
+            "problemMatcher": "$msCompile"
         }
     ]
 }

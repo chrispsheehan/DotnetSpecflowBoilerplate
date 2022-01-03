@@ -1,7 +1,12 @@
 Feature: Github
 
-Scenario: Github_home
+Background: Go_To_Github
 	Given I go to "https://github.com/"
 	Then the page title is "GitHub: Where the world builds software · GitHub"
-    When I search for "something"
-    Then I see results of "fishingworld/something, jrainlau/draw-something, fangjian0423/springboot-analysis"
+
+Scenario Outline: Github_home
+    When I search for <searchValue>
+    Then I see results of <expectedResults>
+Examples:
+    | searchValue   | expectedResults                                                                       |
+    | "something"   | "fishingworld/something, jrainlau/draw-something, fangjian0423/springboot-analysis"   |

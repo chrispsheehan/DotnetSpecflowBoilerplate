@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;

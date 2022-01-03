@@ -1,6 +1,6 @@
 using OpenQA.Selenium;
 
-namespace boilerplate.PageObjects
+namespace Boilerplate.PageObjects
 {
     public static class GithubPageElements
     {

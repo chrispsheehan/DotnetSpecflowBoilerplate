@@ -2,7 +2,7 @@ using Xunit;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 
-namespace boilerplate.Steps
+namespace Boilerplate.Steps
 {
     [Binding]
     public sealed class WebUIStepDefinitions

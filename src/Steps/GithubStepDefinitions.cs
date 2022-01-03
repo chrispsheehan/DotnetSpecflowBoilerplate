@@ -1,10 +1,9 @@
 using Xunit;
-using OpenQA.Selenium;
 using TechTalk.SpecFlow;
-using boilerplate.PageObjects;
+using Boilerplate.PageObjects;
 using System.Collections.Generic;
 
-namespace boilerplate.Steps
+namespace Boilerplate.Steps
 {
     [Binding]
     public sealed class GithubStepDefinitions

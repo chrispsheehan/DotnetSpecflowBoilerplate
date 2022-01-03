@@ -1,9 +1,8 @@
-using System;
 using System.Collections.Generic;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 
-namespace boilerplate.PageObjects
+namespace Boilerplate.PageObjects
 {
     [Binding]
     public class GithubHomePageObject

@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
 
-namespace boilerplate.Hooks
+namespace Boilerplate.Hooks
 {
     [Binding]
     public class Hooks

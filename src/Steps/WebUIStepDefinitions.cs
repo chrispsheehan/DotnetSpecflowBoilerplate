@@ -8,7 +8,7 @@ namespace boilerplate.Steps
     [Binding]
     public sealed class WebUIStepDefinitions
     {
-        private IWebDriver _driver;
+        private readonly IWebDriver _driver;
 
         public WebUIStepDefinitions(IWebDriver driver)
         {

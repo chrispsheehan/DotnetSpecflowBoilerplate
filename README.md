@@ -57,7 +57,7 @@ GOTCHA - ensure read/write permissions are granted to the folder. Otherwise no t
 
 ```json
 {
-    "dotnet-test-explorer.testProjectPath" : "**/*.test.csproj"
+    "dotnet-test-explorer.testProjectPath" : "**/*.Test.csproj"
 }
 ```
 
